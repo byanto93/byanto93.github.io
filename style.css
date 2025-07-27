@@ -1,18 +1,21 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background: #f7f9fc;
+  background: #f0f4f8;
   color: #333;
   line-height: 1.6;
   padding: 0;
 }
+
 a {
-  color: #007acc;
+  color: #e67e22;
   text-decoration: none;
 }
 a:hover {
+  color: #d35400;
   text-decoration: underline;
 }
+
 .container {
   max-width: 900px;
   margin: 20px auto;
@@ -21,9 +24,10 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
 /* Navigation */
 nav {
-  background: #007acc;
+  background: #2c3e50;
 }
 .nav-menu {
   margin: 0;
@@ -31,9 +35,6 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-}
-.nav-menu li {
-  margin: 0;
 }
 .nav-menu li a {
   display: block;
@@ -43,52 +44,32 @@ nav {
 }
 .nav-menu li a.active,
 .nav-menu li a:hover {
-  background: #005f99;
+  background: #34495e;
   color: white;
 }
+
 /* Headings */
 h1, h2 {
-  color: #007acc;
+  color: #2c3e50;
   margin-top: 0;
 }
+
 header {
   text-align: center;
   margin-bottom: 30px;
 }
+
+/* Foto Profil */
 .profile-photo {
-  width: 300px;       /* ukuran lebarnya */
-  height: 300px;      /* tinggi sama supaya bentuk kotak */
-  border-radius: 50%; /* bikin jadi lingkaran */
-  object-fit: cover;  /* biar foto proporsional */
-  margin: 15px 0;     /* jarak atas bawah */
-  display: block;     /* supaya bisa dikontrol margin */
-  margin-left: auto;
-  margin-right: auto; /* biar center */
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px auto;
+  display: block;
 }
+
+/* Paragraf */
 p {
   text-align: justify;
-}
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-menu li a {
-    padding: 12px 10px;
-  }
-
-  .profile-photo {
-    width: 180px;
-    height: 180px;
-  }
-
-  p {
-    text-align: left;
-  }
 }
