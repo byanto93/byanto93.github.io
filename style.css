@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+}
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+/* Navigation */
+nav {
+  background: #007acc;
+}
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-menu li {
+  margin: 0;
+}
+.nav-menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  font-weight: 600;
+}
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  background: #005f99;
+  color: white;
+}
+/* Headings */
+h1, h2 {
+  color: #007acc;
+  margin-top: 0;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.profile-photo {
+  width: 300px;       /* ukuran lebarnya */
+  height: 300px;      /* tinggi sama supaya bentuk kotak */
+  border-radius: 50%; /* bikin jadi lingkaran */
+  object-fit: cover;  /* biar foto proporsional */
+  margin: 15px 0;     /* jarak atas bawah */
+  display: block;     /* supaya bisa dikontrol margin */
+  margin-left: auto;
+  margin-right: auto; /* biar center */
+}
+p {
+  text-align: justify;
+}
