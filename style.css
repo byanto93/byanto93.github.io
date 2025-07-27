@@ -68,3 +68,27 @@ header {
 p {
   text-align: justify;
 }
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li a {
+    padding: 12px 10px;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  p {
+    text-align: left;
+  }
+}
